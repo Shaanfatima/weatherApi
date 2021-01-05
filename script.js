@@ -11,7 +11,7 @@ searchForm.onsubmit = function (e) {
 
     const searchData = new FormData(searchForm);
     
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${searchData.get("cityName")}&appid=8e5c5d89aa0321b039a906842ea53fed`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchData.get("cityName")}&appid=8e5c5d89aa0321b039a906842ea53fed`;
      
      fetch(url)
      .then(function (response){
